@@ -19,7 +19,39 @@
         },
         "username": "amyrobson"
       },
-      "replies": []
+      "replies": [
+        {
+          "id": 5,
+          "content": "yeah, agreed",
+          "createdAt": "1 week ago",
+          "score": 4,
+          "replyingTo": "amyrobson",
+          "user": {
+            "image": { 
+              "png": "./images/avatars/image-ramsesmiron.png",
+              "webp": "./images/avatars/image-ramsesmiron.webp"
+            },
+            "username": "ramsesmiron"
+          },
+          "replies": [
+            {
+              "id": 6,
+              "content": "we agree to agree",
+              "createdAt": "1 week ago",
+              "score": 4,
+              "replyingTo": "ramsesmiron",
+              "user": {
+                "image": { 
+                  "png": "./images/avatars/image-ramsesmiron.png",
+                  "webp": "./images/avatars/image-ramsesmiron.webp"
+                },
+                "username": "ramsesmiron"
+              },
+              "replies": []
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 2,
@@ -60,7 +92,39 @@
               "webp": "./images/avatars/image-juliusomo.webp"
             },
             "username": "juliusomo"
-          }
+          },
+          "replies": [
+            {
+              "id": 7,
+              "content": "that's a new reply",
+              "createdAt": "1 week ago",
+              "score": 4,
+              "replyingTo": "juliusomo",
+              "user": {
+                "image": { 
+                  "png": "./images/avatars/image-ramsesmiron.png",
+                  "webp": "./images/avatars/image-ramsesmiron.webp"
+                },
+                "username": "ramsesmiron"
+              },
+              "replies": [
+                {
+                  "id": 7,
+                  "content": "that's a newerrrr reply",
+                  "createdAt": "1 week ago",
+                  "score": 4,
+                  "replyingTo": "juliusomo",
+                  "user": {
+                    "image": { 
+                      "png": "./images/avatars/image-ramsesmiron.png",
+                      "webp": "./images/avatars/image-ramsesmiron.webp"
+                    },
+                    "username": "ramsesmiron"
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
