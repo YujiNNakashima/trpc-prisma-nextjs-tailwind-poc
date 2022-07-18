@@ -4,8 +4,9 @@ import { CommentSection } from '../components/comment-section/CommentSection';
 import commentsData from '../../interactive-comments-section-main/data.json'
 
 const Home: NextPage = () => {
-  const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
-
+  const hello = trpc.useQuery(["example.getAll"]);
+  console.log(hello)
+  let depth = 0
   return (
     <>
       <div className="flex items-center justify-center">
@@ -14,20 +15,7 @@ const Home: NextPage = () => {
           commentsData.comments.map((comment, i) => {
             return (
               <>
-              <CommentSection key={`key-${i}`} data={comment}/>
-              {comment?.replies.map((reply, i )=> (
-                <>
-                <div className="relative  
-                before:absolute
-                before:bg-primary-light-grayish-blue
-                before:min-h-full		
-                before:w-1
-                before:left-8"
-                >
-                <CommentSection key={`key-reply-${i}`} data={reply} reply/>
-                </div>
-                </>
-              ))}
+              <CommentSection key={`key-${i}`} data={comment} depth={depth}/>
               </>
             )
           }
